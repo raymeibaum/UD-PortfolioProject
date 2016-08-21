@@ -4,8 +4,9 @@ html {
 }
 
 body {
-  position: relative;
-  margin-top: 70px;
+  /*position: relative;*/
+  /*margin-top: 70px;*/
+  margin-bottom: 60px;
 }
 
 main {
@@ -25,8 +26,9 @@ main {
 }
 
 section {
-  min-height: 600px;
-  padding-top: 50px;
+  padding-top: 75px;
+  min-height: 400px;
+  margin-bottom: 50px;
 }
 
 .btn {
@@ -35,4 +37,12 @@ section {
 
 .project-title {
   margin-top: -10px;
+}
+
+.page-header {
+  margin-top: 0;
+}
+
+#portrait {
+  padding-bottom: 15px;
 }
