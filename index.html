@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -61,16 +61,11 @@
         <h2>About</h2>
       </div>
       <div class="row">
-        <div class="col-sm-4" id="portrait">
-          <img class="img-responsive img-rounded visible-xs" src="img/IMG_4892_square.jpg">
-          <img class="img-responsive img-rounded hidden-xs" src="img/IMG_4892.jpg">
+        <div class="col-sm-4 hidden-xs" id="portrait">
+          <img class="img-responsive img-rounded" src="img/IMG_4892.jpg" alt="Portrait of Ray Meibaum">
         </div>
-        <div class="col-sm-8">
-          <p>I am a forward thinking, self-started team player who is ready to pour passion into every project I touch. My greatest strength is being able to break problems into “byte” size (pun intended), approachable issues and work through them. I’m quick
-            to admit my own ignorance, and am not afraid to turn to Stack Overflow and Google for the answers I need.</p>
-          <p>I wasn’t always a web developer. I spent the first part of my professional career working in the film and television industry as a camera assistant (<a href="http://www.imdb.com/name/nm3874232/">IMDB</a>). It was here that I learned how to work
-            with a team of people in a high stress, high pressure environment to make something great. The film industry also taught me how to communicate well with my colleagues as well as my superiors, how to manage time efficiently, and to always pay
-            attention to the smaller details.</p>
+        <div class="col-sm-8 col-xs-12">
+          <p id="about-text"></p>
         </div>
       </div>
     </section>
@@ -78,97 +73,40 @@
       <div class="page-header">
         <h2>Portfolio</h2>
       </div>
-      <div class="row text-center">
-        <div class="col-sm-4">
-          <img class="img-responsive" src="img/LocalWeatherShowcase.png">
-          <h3 class="project-title">Project Title</h3>
-          <p>Description of project goes here.</p>
-        </div>
-        <div class="col-sm-4">
-          <img class="img-responsive" src="img/LocalWeatherShowcase.png">
-          <h3 class="project-title">Project Title</h3>
-          <p>Description of project goes here.</p>
-        </div>
-        <div class="col-sm-4">
-          <img class="img-responsive" src="img/LocalWeatherShowcase.png">
-          <h3 class="project-title">Project Title</h3>
-          <p>Description of project goes here.</p>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-sm-4">
-          <img class="img-responsive" src="img/LocalWeatherShowcase.png">
-          <h3 class="project-title">Project Title</h3>
-          <p>Description of project goes here.</p>
-        </div>
-        <div class="col-sm-4">
-          <img class="img-responsive" src="img/LocalWeatherShowcase.png">
-          <h3 class="project-title">Project Title</h3>
-          <p>Description of project goes here.</p>
-        </div>
-        <div class="col-sm-4">
-          <img class="img-responsive" src="img/LocalWeatherShowcase.png">
-          <h3 class="project-title">Project Title</h3>
-          <p>Description of project goes here.</p>
-        </div>
-      </div>
+      <div class="row text-center" id="portfolio-content"></div>
     </section>
+
+    <!-- portfolio modal -->
+    <div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section id="skills">
       <div class="page-header">
         <h2>Skills</h2>
       </div>
-      <div class="row">
-        <div class="col-xs-4">
-          <ul class="list-unstyled">
-            <li><strong>Strong</strong></li>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>Git/GitHub</li>
-          </ul>
-        </div>
-        <div class="col-xs-4">
-          <ul class="list-unstyled">
-            <li><strong>Experienced</strong></li>
-            <li>Python</li>
-            <li>AngularJS</li>
-            <li>MySQL</li>
-            <li>Node.js</li>
-            <li>Express</li>
-          </ul>
-        </div>
-        <div class="col-xs-4">
-          <ul class="list-unstyled">
-            <li><strong>Horizon</strong></li>
-            <li>ReactJS</li>
-            <li>Swift</li>
-            <li>Aurelia</li>
-          </ul>
-        </div>
-      </div>
+      <div class="row" id="skills-content"></div>
     </section>
+
     <section id="education">
       <div class="page-header">
         <h2>Education</h2>
       </div>
-      <strong>Udacity</strong>
-      <p>Full Stack Web Development Certification, Computer Software Engineering
-        <br/>2016</p>
-      <strong>Free Code Camp</strong>
-      <p>Full Stack Web Development Certification, Computer Software Engineering
-        <br/>2015-2016</p>
-      <strong>Operation Spark</strong>
-      <p>Coding Bootcamp, Computer Software Engineering
-        <br/>2015</p>
-      <strong>Full Sail University</strong>
-      <p>Bachelor of Science, Film
-        <br/>2008-2011</p>
+      <div id="education-text"></div>
     </section>
+
   </div>
-  <!-- /container -->
   <footer class="footer">
     <div class="container">
       <p class="text-muted">©2016 Ray Meibaum. All rights reserved.</p>
@@ -177,6 +115,7 @@
   <script src="https://use.fontawesome.com/afbd43557e.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
