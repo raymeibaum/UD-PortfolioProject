@@ -10,8 +10,8 @@ $(function() {
         "also for the profound effect programming can have on people all " +
         "over the world. Web applications help billions of people every " +
         "day in ways such as social networking and communications, " +
-        "banking and finance, news delivery, entertainment, and so much " +
-        "more. Ray is more than excited to live and work in an industry " +
+        "banking and finance, news content delivery, entertainment, and so " +
+        "much more. Ray is more than excited to live and work in an industry " +
         "that is truly shaping the future of the human race."
     },
     portrait: "img/IMG_4892.jpg",
@@ -188,9 +188,7 @@ $(function() {
       this.modalBody.empty();
       var htmlStr = "";
       var portfolioItem = controller.getPortfolioItemById(id);
-      htmlStr += `<button type="button" class="close" data-dismiss="modal"
-                  aria-label="Close"><span aria-hidden="true">&times;
-                  </span></button><div class="row"><div class="col-sm-6">
+      htmlStr += `<div class="row"><div class="col-sm-6">
                   <a href="${portfolioItem.url}"><img class="img-responsive"
                   src="${portfolioItem.image}" alt="Sample image from project">
                   </a></div><div class="col-sm-6" id="portfolio-modal-text">
