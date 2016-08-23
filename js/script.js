@@ -3,36 +3,34 @@ $(function() {
   // Model
   var ray = {
     about: "Ray Meibaum is pretty awesome.",
+    portrait: "img/IMG_4892.jpg",
     portfolio: [
       {
         title: "Local Weather",
-        description: "Allows the user to see pertinent weather information based on their location.",
-        features: "",
-        challenges: "",
+        description: " the user to see pertinent weather information based on their location.",
+        features: ["Use of current location", "Google Reverse Geolocation API",
+                   "Forecast.io Weather API", "Skycons animated weather icons API"],
         image: "img/LocalWeatherShowcase.png",
         url: "https://raymeibaum.github.io/FCC-LocalWeather/"
       },
       {
         title: "Random Quote Generator",
         description: "Displays random programming related quotes to the user.",
-        features: "",
-        challenges: "",
+        features: [""],
         image: "img/RandomQuoteGeneratorShowcase.png",
         url: ""
       },
       {
         title: "Twitch API",
         description: "Uses the Twitch API to display an array of user statuses.",
-        features: "",
-        challenges: "",
+        features: [""],
         image: "img/LocalWeatherShowcase.png",
         url: ""
       },
       {
         title: "Wikipedia Viewer",
         description: "Allows the user to search for Wikipedia articles",
-        features: "",
-        challenges: "",
+        features: [""],
         image: "img/WikipediaViewerShowcase.png",
         url: ""
       }
@@ -89,6 +87,9 @@ $(function() {
     getAboutText: function() {
       return ray.about;
     },
+    getAboutImage: function() {
+      return ray.portrait;
+    },
     getEducationArr: function() {
       return ray.education;
     },
@@ -107,11 +108,14 @@ $(function() {
   var about = {
     init: function() {
       this.aboutText = $('#about-text');
+      this.aboutImage = $('#about-image');
       this.render();
     },
     render: function() {
       var aboutText = controller.getAboutText();
+      var aboutImage = controller.getAboutImage();
       this.aboutText.text(aboutText);
+      this.aboutImage.attr('src',  aboutImage);
     }
   };
   var portfolio = {
@@ -139,22 +143,26 @@ $(function() {
   };
   var portfolioModal = {
     init: function() {
-      this.modalTitle = $('.modal-title');
       this.modalBody = $('.modal-body');
     },
     render(id) {
       this.modalBody.empty();
+      var htmlStr = "";
       var portfolioItem = controller.getPortfolioItemById(id);
-      var htmlStr = `<div class="row"><div class="col-sm-5">
-                     <img class="img-responsive" src="${portfolioItem.image}" alt="Sample image from project">
-                     </div><div class="col-sm-7">
-                     <strong>Description</strong><p>${portfolioItem.description}</p>
-                     <strong>Features</strong><p>${portfolioItem.features}</p>
-                     <strong>Challenges</strong><p>${portfolioItem.challenges}</p>
-                     </div></div>`;
+      htmlStr += `<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <div class="row"><div class="col-sm-6"><a href="${portfolioItem.url}">
+                  <img class="img-responsive" src="${portfolioItem.image}" alt="Sample image from project"></a>
+                  </div><div class="col-sm-6" id="portfolio-modal-text">
+                  <h3>${portfolioItem.title}</h3>
+                  <strong>Description</strong><p>${portfolioItem.description}</p>
+                  <strong>Features</strong><ul>`
+      portfolioItem.features.forEach(function(feature) {
+        htmlStr += `<li>${feature}</li>`
+      });
+      htmlStr += `</ul><strong>Click <a href="${portfolioItem.url}">here</a> to view project.</strong>
+                  </div></div>`;
 
       this.modalBody.append(htmlStr);
-      this.modalTitle.text(portfolioItem.title);
     }
   }
   var skills = {

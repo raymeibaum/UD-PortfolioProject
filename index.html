@@ -39,7 +39,7 @@
       <div class="jumbotron">
         <h1>Hello!</h1>
         <p>Welcome to raymeibaum.github.io, an online showcase of Ray Meibaum's portfolio and skill set.</p>
-        <h4>Around the Web</h4>
+        <!-- <h4></h4> -->
         <div class="row">
           <div class="col-sm-3">
             <a class="btn btn-block btn-default" href="https://github.com/raymeibaum" role="button"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
@@ -62,10 +62,11 @@
       </div>
       <div class="row">
         <div class="col-sm-4 hidden-xs" id="portrait">
-          <img class="img-responsive img-rounded" src="img/IMG_4892.jpg" alt="Portrait of Ray Meibaum">
+          <img class="img-responsive img-rounded" id="about-image" alt="Portrait of Ray Meibaum">
         </div>
         <div class="col-sm-8 col-xs-12">
-          <p id="about-text"></p>
+          <p class="lead" id="about-text"></p>
+          <p id="about-lead"></p>
         </div>
       </div>
     </section>
@@ -80,14 +81,7 @@
     <div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel"></h4>
-          </div>
           <div class="modal-body"></div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
         </div>
       </div>
     </div>

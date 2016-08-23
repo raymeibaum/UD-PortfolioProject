@@ -45,3 +45,7 @@ section {
 #portrait {
   padding-bottom: 15px;
 }
+
+#portfolio-modal-text {
+  margin-top: -15px;
+}
