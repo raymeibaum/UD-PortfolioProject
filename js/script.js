@@ -191,7 +191,7 @@ $(function() {
       htmlStr += `<div class="row"><div class="col-sm-6">
                   <a href="${portfolioItem.url}"><img class="img-responsive"
                   src="${portfolioItem.image}" alt="Sample image from project">
-                  </a></div><div class="col-sm-6" id="portfolio-modal-text">
+                  </a></div><div class="col-sm-6">
                   <h3>${portfolioItem.title}</h3>
                   <strong>Description</strong><p>${portfolioItem.description}
                   </p><strong>Features</strong><ul>`
