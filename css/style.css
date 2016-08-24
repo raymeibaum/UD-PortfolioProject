@@ -2,15 +2,19 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   margin-bottom: 80px;
 }
+
 section {
   padding-top: 50px;
 }
+
 .jumbotron {
   margin-top: 20px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -18,18 +22,23 @@ section {
   height: 60px;
   background-color: #f5f5f5;
 }
+
 .text-muted {
   margin: 20px 0;
 }
+
 .btn {
   margin-bottom: 10px;
 }
+
 .project-title {
   margin-top: -10px;
 }
+
 .page-header {
   margin-top: 0;
 }
+
 #portrait {
   padding-bottom: 15px;
 }
