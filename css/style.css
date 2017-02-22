@@ -7,12 +7,12 @@ body {
   margin-bottom: 80px;
 }
 
-section {
-  padding-top: 50px;
+.jumbotron {
+  margin-top: 20px;
 }
 
 .jumbotron {
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .footer {
@@ -37,8 +37,4 @@ section {
 
 .page-header {
   margin-top: 0;
-}
-
-#portrait {
-  padding-bottom: 15px;
 }

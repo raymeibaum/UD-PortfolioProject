@@ -90,7 +90,7 @@ $(function() {
     ],
     education: [{
       name: "Udacity",
-      description: "Full Stack Web Development Nanodegree, Computer " +
+      description: "Various Online Courses/Resources, Computer " +
                    "Software Engineering",
       year: "2016"
     }, {
