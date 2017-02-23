@@ -1,2 +1,2 @@
 #raymeibaum.github.io
-Ray Meibaum's portfolio page
+an online showcase of Ray Meibaum's portfolio and skill set
