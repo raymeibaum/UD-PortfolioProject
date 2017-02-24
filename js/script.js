@@ -3,22 +3,22 @@ $(function() {
   // Model
   var ray = {
     about: {
-      lead: "Ray Meibaum is a web developer who is ready to make a difference.",
-      main: "Although born and raised in St. Louis, Missouri, Ray is an " +
-        "Atlanta, Georgia based full-stack web developer who loves " +
-        "writing code not only for the excitement of accomplishment, but " +
-        "also for the profound effect programming can have on people all " +
-        "over the world. Web applications help billions of people every " +
-        "day in ways such as social networking and communications, " +
-        "banking and finance, news content delivery, entertainment, and so " +
-        "much more. Ray is more than excited to live and work in an industry " +
-        "that is truly shaping the future of the human race."
+      lead: `Ray Meibaum is a web developer who is ready to make a difference.`,
+      main: `Although born and raised in St. Louis, Missouri, Ray is an
+        Atlanta, Georgia based full-stack web developer who loves
+        writing code not only for the excitement of accomplishment, but
+        also for the profound effect programming can have on people all
+        over the world. Web applications help billions of people every
+        day in ways such as social networking and communications,
+        banking and finance, news content delivery, entertainment, and so
+        much more. Ray is more than excited to live and work in an industry
+        that is truly shaping the future of the human race.`
     },
     portrait: "img/IMG_4892.jpg",
     portfolio: [{
       title: "Local Weather",
-      description: " the user to see pertinent weather information based on " +
-        "their location.",
+      description: `Allows the user to see pertinent weather information based
+      on their location.`,
       features: [
         "Use of current location",
         "Google Reverse Geolocation API",
