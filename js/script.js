@@ -111,7 +111,7 @@ $(function() {
       name: "Full Sail University",
       description: "Bachelor of Arts, Film",
       year: "2008-2011"
-    }, ]
+    }]
   };
 
   // Controller
