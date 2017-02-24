@@ -89,6 +89,11 @@ $(function() {
 
     ],
     education: [{
+      name: "General Assembly",
+      description: "Web Development Immersive, Computer " +
+                   "Software Engineering",
+      year: "2017"
+    }, {
       name: "Udacity",
       description: "Various Online Courses/Resources, Computer " +
                    "Software Engineering",
