@@ -27,7 +27,7 @@ const Presenter = {
   renderPortfolioModal(project) {
     this.$portfolioModal.empty();
       let content = `<div class="row"><div class="col-sm-6">
-                  <a href="${project.url}"><img class="img-responsive"
+                  <a href="${project.url}"><img class="img-responsive modal-photo"
                   src="${project.image}" alt="Sample image from project">
                   </a></div><div class="col-sm-6">
                   <h3>${project.title}</h3>
@@ -37,8 +37,9 @@ const Presenter = {
       project.features.forEach(function(feature) {
         content += `<li>${feature}</li>`
       });
-      content += `</ul><strong>Click <a href="${project.url}">here</a>
-                  to view project.</strong></div></div>`;
+      content += `</ul>
+                  <a class="btn btn-default" href="${project.deployment}" role="button" target="_blank">Deployment</a>
+                  <a class="btn btn-default" href="${project.repository}" role="button" target="_blank">Repository</a></div></div>`;
 
       this.$portfolioModal.append(content);
   },

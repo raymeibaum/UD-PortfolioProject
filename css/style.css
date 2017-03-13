@@ -2,18 +2,15 @@ html {
   position: relative;
   min-height: 100%;
 }
-
 body {
   margin-bottom: 80px;
 }
 div.portfolio {
   padding: 30px;
 }
-
 div.jumbotron {
   margin-top: 70px;
 }
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -21,15 +18,15 @@ div.jumbotron {
   height: 60px;
   background-color: #f5f5f5;
 }
-
+img.modal-photo {
+  padding: 25px;
+}
 .text-muted {
   margin: 20px 0;
 }
-
 .btn {
   margin-bottom: 10px;
 }
-
 .page-header {
   margin-top: 0;
 }

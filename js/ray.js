@@ -23,7 +23,8 @@ const Ray = {
       "Responsive design"
     ],
     image: "img/simon.png",
-    url: "https://raymeibaum.github.io/simon/"
+    deployment: "https://raymeibaum.github.io/simon/",
+    repository: "https://github.com/raymeibaum/simon"
   },{
     title: "Animal Match",
     description: "A memory game.",
@@ -33,7 +34,8 @@ const Ray = {
       "Twitter Tweet Button API for tweeting high scores",
     ],
     image: "img/animal-match.png",
-    url: "https://raymeibaum.github.io/wdi-fundamentals-memorygame/"
+    deployment: "https://raymeibaum.github.io/wdi-fundamentals-memorygame/",
+    repository: "https://github.com/raymeibaum/wdi-fundamentals-memorygame"
   },{
     title: "Local Weather",
     description: `Allows the user to see pertinent weather information based
@@ -45,7 +47,8 @@ const Ray = {
       "Skycons animated weather icons API"
     ],
     image: "img/local-weather.png",
-    url: "https://raymeibaum.github.io/FCC-LocalWeather/"
+    deployment: "https://raymeibaum.github.io/FCC-LocalWeather/",
+    repository: "https://github.com/raymeibaum/FCC-LocalWeather"
   }, {
     title: "Random Quote Generator",
     description: "Displays random programming related quotes to the user.",
@@ -55,7 +58,8 @@ const Ray = {
       "Bootstrap styling"
     ],
     image: "img/random-quote-generator.png",
-    url: "http://raymeibaum.github.io/FCC-RandomQuoteGenerator/"
+    deployment: "http://raymeibaum.github.io/FCC-RandomQuoteGenerator/",
+    repository: "https://github.com/raymeibaum/FCC-RandomQuoteGenerator"
   }, {
     title: "Twitch API",
     description: "Uses the Twitch API to display an array of user statuses.",
@@ -65,7 +69,8 @@ const Ray = {
       "Bootstrap styling"
     ],
     image: "img/twitch.png",
-    url: "https://raymeibaum.github.io/FCC-TwitchAPI"
+    deployment: "https://raymeibaum.github.io/FCC-TwitchAPI",
+    repository: "https://github.com/raymeibaum/FCC-TwitchAPI"
   }, {
     title: "Wikipedia Viewer",
     description: "Allows the user to search for Wikipedia articles.",
@@ -75,7 +80,8 @@ const Ray = {
       "Bootstrap styling"
     ],
     image: "img/wikipedia.png",
-    url: "https://raymeibaum.github.io/FCC-WikipediaViewer/"
+    deployment: "https://raymeibaum.github.io/FCC-WikipediaViewer/",
+    repository: "https://github.com/raymeibaum/FCC-WikipediaViewer"
   }],
   skills: [{
     category: "Strong",
