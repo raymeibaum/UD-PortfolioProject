@@ -39,7 +39,8 @@ const Presenter = {
       });
       content += `</ul>
                   <a class="btn btn-default" href="${project.deployment}" role="button" target="_blank">Deployment</a>
-                  <a class="btn btn-default" href="${project.repository}" role="button" target="_blank">Repository</a></div></div>`;
+                  <a class="btn btn-default" href="${project.repository}" role="button" target="_blank">Repository</a>
+                  </div></div>`;
 
       this.$portfolioModal.append(content);
   },
