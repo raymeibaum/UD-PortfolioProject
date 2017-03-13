@@ -15,24 +15,24 @@ const Presenter = {
   renderPortfolio(portfolio) {
     portfolio.forEach((project, index) => {
       let content = `<div class="col-sm-4 portfolio"><a class="portfolio-item"
-                  id="${index}" data-toggle="modal"
-                  data-target="#portfolio-modal">
-                  <img class="img-responsive" src="${project.image}"
-                  alt="Image of ${project.title}">
-                  <h4 class="project-title">${project.title}</h4></a>
-                  </div>`;
+                     id="${index}" data-toggle="modal"
+                     data-target="#portfolio-modal">
+                     <img class="img-responsive" src="${project.image}"
+                     alt="Image of ${project.title}">
+                     <h4 class="project-title">${project.title}</h4></a>
+                     </div>`;
       Presenter.$portfolio.append(content);
     });
   },
   renderPortfolioModal(project) {
     this.$portfolioModal.empty();
       let content = `<div class="row"><div class="col-sm-6">
-                  <a href="${project.url}"><img class="img-responsive modal-photo"
-                  src="${project.image}" alt="Sample image from project">
-                  </a></div><div class="col-sm-6">
-                  <h3>${project.title}</h3>
-                  <strong>Description</strong><p>${project.description}
-                  </p><strong>Features</strong><ul>`;
+                     <a href="${project.url}"><img class="img-responsive modal-photo"
+                     src="${project.image}" alt="Sample image from project">
+                     </a></div><div class="col-sm-6">
+                     <h3>${project.title}</h3>
+                     <strong>Description</strong><p>${project.description}
+                     </p><strong>Features</strong><ul>`;
 
       project.features.forEach((feature) => content += `<li>${feature}</li>`);
       content += `</ul>
