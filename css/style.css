@@ -7,14 +7,10 @@ body {
   margin-bottom: 80px;
 }
 div.portfolio {
-  padding: 10px;
+  padding: 30px;
 }
 
-.jumbotron {
-  margin-top: 20px;
-}
-
-.jumbotron {
+div.jumbotron {
   margin-top: 70px;
 }
 

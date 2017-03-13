@@ -101,7 +101,7 @@ const Ray = {
     items: [
       "ReactJS",
       "Angular2",
-      "Aurelia"
+      "Ruby"
     ]
   }],
   education: [{
