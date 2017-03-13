@@ -6,6 +6,9 @@ html {
 body {
   margin-bottom: 80px;
 }
+div.portfolio {
+  padding: 10px;
+}
 
 .jumbotron {
   margin-top: 20px;
@@ -29,10 +32,6 @@ body {
 
 .btn {
   margin-bottom: 10px;
-}
-
-.project-title {
-  margin-top: -10px;
 }
 
 .page-header {
