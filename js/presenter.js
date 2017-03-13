@@ -13,7 +13,7 @@ const Presenter = {
     this.$aboutPortrait.attr('src', portraitSrc);
   },
   renderPortfolio(portfolio) {
-    portfolio.forEach(function(project, index) {
+    portfolio.forEach((project, index) => {
       let content = `<div class="col-sm-4 portfolio"><a class="portfolio-item"
                   id="${index}" data-toggle="modal"
                   data-target="#portfolio-modal">
@@ -32,11 +32,9 @@ const Presenter = {
                   </a></div><div class="col-sm-6">
                   <h3>${project.title}</h3>
                   <strong>Description</strong><p>${project.description}
-                  </p><strong>Features</strong><ul>`
+                  </p><strong>Features</strong><ul>`;
 
-      project.features.forEach(function(feature) {
-        content += `<li>${feature}</li>`
-      });
+      project.features.forEach((feature) => content += `<li>${feature}</li>`);
       content += `</ul>
                   <a class="btn btn-default" href="${project.deployment}" role="button" target="_blank">Deployment</a>
                   <a class="btn btn-default" href="${project.repository}" role="button" target="_blank">Repository</a>
@@ -45,18 +43,16 @@ const Presenter = {
       this.$portfolioModal.append(content);
   },
   renderSkills(skills) {
-    skills.forEach(function(section) {
+    skills.forEach((section) => {
       let content = `<div class="col-xs-4"><ul class="list-unstyled">
                      <li><strong>${section.category}</strong></li>`;
-      section.items.forEach(function(skill) {
-        content += `<li>${skill}</li>`;
-      });
+      section.items.forEach((skill) => content += `<li>${skill}</li>`);
       content += `</ul></div>`;
       Presenter.$skills.append(content);
     });
   },
   renderEducation(education) {
-    education.forEach(function(school) {
+    education.forEach((school) => {
       let content = `<strong>${school.name}</strong>
                      <p>${school.description}<br>${school.year}</p>`;
       Presenter.$education.append(content);
