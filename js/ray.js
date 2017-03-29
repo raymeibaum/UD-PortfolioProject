@@ -14,6 +14,18 @@ const Ray = {
   },
   portrait: "img/rem-portrait.jpg",
   portfolio: [{
+    title: "Pubcrawlr",
+    description: "A MEN stack application that allows users to plan pubcrawls based on their favorite bars.",
+    features: [
+      "Fully featured backend using Node/ExpressJS",
+      "MongoDB document database featuring CRUD operations on three models",
+      "Complete user registration and login system using Passport.js",
+      "Mobile-first responsive design using Bootstrap"
+    ],
+    image: "img/pubcrawlr.png",
+    deployment: "https://pubcrawlr.herokuapp.com/",
+    repository: "https://github.com/raymeibaum/pubcrawlr"
+  },{
     title: "Simon",
     description: "A recreation of a classic 80s game.",
     features: [
