@@ -1,16 +1,12 @@
 'use-strict';
 const Ray = {
   about: {
-    lead: `Ray Meibaum is a web developer who is ready to make a difference.`,
-    main: `Although born and raised in St. Louis, Missouri, Ray is an
-      Atlanta, Georgia based full-stack web developer who loves
-      writing code not only for the excitement of accomplishment, but
-      also for the profound effect programming can have on people all
-      over the world. Web applications help billions of people every
-      day in ways such as social networking and communications,
-      banking and finance, news content delivery, entertainment, and so
-      much more. Ray is more than excited to live and work in an industry
-      that is truly shaping the future of the human race.`
+    lead: `Hello! My name is Ray Meibaum, and I am a full-stack JavaScript developer. `,
+    main: `I have a passion for creating wonderful user experiences through sleek front end UIs as well as fully featured back end servers. Currently, I am a web development student at General Assembly, Atlanta, but soon I will be bringing my web development excitement and skillset into the workforce. 
+
+My skillset is mainly the MEAN stack (MongoDB, Express, AngularJS, and Node.JS), but I also have ample experience with Git and GitHub, as well as relational databases such as MySQL. 
+
+My hobbies include exploring the earth with my future wife, Melanie and my dog, Charlie. I love cycling and playing the violin.`
   },
   portrait: "img/rem-portrait.jpg",
   portfolio: [{
