@@ -3,10 +3,10 @@ const Ray = {
   about: {
     lead: `Hello! My name is Ray Meibaum, and I am a full-stack JavaScript developer. `,
     main: `I have a passion for creating wonderful user experiences through sleek front end UIs as well as fully featured back end servers. Currently, I am a web development student at General Assembly, Atlanta, but soon I will be bringing my web development excitement and skillset into the workforce. 
-
-My skillset is mainly the MEAN stack (MongoDB, Express, AngularJS, and Node.JS), but I also have ample experience with Git and GitHub, as well as relational databases such as MySQL. 
-
-My hobbies include exploring the earth with my future wife, Melanie and my dog, Charlie. I love cycling and playing the violin.`
+           
+           My skillset is mainly the MEAN stack (MongoDB, Express, AngularJS, and Node.JS), but I also have ample experience with Git and GitHub, as well as relational databases such as MySQL. 
+           
+           My hobbies include exploring the earth with my future wife, Melanie and my dog, Charlie. I love cycling and playing the violin.`
   },
   portrait: "img/rem-portrait.jpg",
   portfolio: [{
