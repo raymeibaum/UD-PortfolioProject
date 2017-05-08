@@ -3,13 +3,10 @@ html {
   min-height: 100%;
 }
 body {
-  margin-bottom: 80px;
+  margin: 80px 0;
 }
 div.portfolio {
   padding: 30px;
-}
-div.jumbotron {
-  margin-top: 70px;
 }
 .footer {
   position: absolute;
