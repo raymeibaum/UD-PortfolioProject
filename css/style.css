@@ -24,9 +24,9 @@ img.modal-photo {
 .text-muted {
   margin: 20px 0;
 }
-.btn {
-  margin-bottom: 10px;
-}
 .page-header {
   margin-top: 0;
+}
+.web-icon {
+	margin: 5px 0;
 }

@@ -4,8 +4,8 @@ const Presenter = {
   $aboutLead: $('p#about-lead'),
   $aboutText: $('p#about-text'),
   $portfolio: $('div#portfolio-content'),
-  $portfolioModal: $('div.modal-body'),
-  $skills: $('div#skills-content'),
+  $portfolioModal: $('div.modal-content'),
+  $skills: $('p#skills-content'),
   $education: $('div#education-content'),
   renderAbout(about, portraitSrc) {
     this.$aboutLead.text(about.lead);
@@ -26,29 +26,44 @@ const Presenter = {
   },
   renderPortfolioModal(project) {
     this.$portfolioModal.empty();
-      let content = `<div class="row"><div class="col-sm-6">
-                     <a href="${project.deployment}"><img class="img-responsive modal-photo"
-                     src="${project.image}" alt="Sample image from project">
-                     </a></div><div class="col-sm-6">
-                     <h3>${project.title}</h3>
-                     <strong>Description</strong><p>${project.description}
-                     </p><strong>Features</strong><ul>`;
+      let content = `
+			<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">${project.title}</h4>
+      </div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-sm-6">
+						<a href="${project.deployment}">
+							<img class="img-responsive modal-photo" src="${project.image}" alt="Sample image from project">
+		        </a>
+					</div>
+					<div class="col-sm-6">
+						<p class="lead">${project.description}</p>
+						<h3>Features</h3>
+						<ul>`;
 
-      project.features.forEach((feature) => content += `<li>${feature}</li>`);
-      content += `</ul>
-                  <a class="btn btn-default" href="${project.deployment}" role="button" target="_blank">Deployment</a>
-                  <a class="btn btn-default" href="${project.repository}" role="button" target="_blank">Repository</a>
-                  </div></div>`;
+	      project.features.forEach((feature) => content += `<li>${feature}</li>`);
+	      content += `
+						</ul>
+			    </div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a class="btn btn-primary" href="${project.deployment}" role="button" target="_blank">Deployment</a>
+				<a class="btn btn-primary" href="${project.repository}" role="button" target="_blank">Repository</a>
+			</div>`;
 
       this.$portfolioModal.append(content);
   },
   renderSkills(skills) {
-    skills.forEach((section) => {
-      let content = `<div class="col-xs-4"><ul class="list-unstyled">
-                     <li><strong>${section.category}</strong></li>`;
-      section.items.forEach((skill) => content += `<li>${skill}</li>`);
-      content += `</ul></div>`;
-      Presenter.$skills.append(content);
+    skills.forEach((skill, index) => {
+			if (index === skills.length - 1) {
+				var content = `and ${skill}.`;
+			} else {
+				var content = `${skill}, `
+			}
+			Presenter.$skills.append(content);
     });
   },
   renderEducation(education) {

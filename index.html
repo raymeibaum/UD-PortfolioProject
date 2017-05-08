@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,8 +26,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#education">Education</a></li>
         </ul>
       </div>
@@ -41,22 +41,22 @@
         <p>Welcome to raymeibaum.github.io, an online showcase of Ray Meibaum's portfolio and skill set.</p>
         <div class="row">
           <div class="col-sm-2 col-xs-6">
-            <a class="btn btn-block btn-default" href="https://github.com/raymeibaum" role="button"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+            <a class="web-icon btn btn-block btn-default" href="https://github.com/raymeibaum" role="button"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
           </div>
           <div class="col-sm-2 col-xs-6">
-            <a class="btn btn-block btn-primary" href="https://www.linkedin.com/in/raymeibaum" role="button"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+            <a class="web-icon btn btn-block btn-default" href="https://www.linkedin.com/in/raymeibaum" role="button"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
           </div>
           <div class="col-sm-2 col-xs-6">
-            <a class="btn btn-block btn-info" href="https://twitter.com/raymeibaum" role="button"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+            <a class="web-icon btn btn-block btn-default" href="https://twitter.com/raymeibaum" role="button"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
           </div>
           <div class="col-sm-2 col-xs-6">
-            <a class="btn btn-block btn-warning" href="http://stackoverflow.com/users/6111648/ray-meibaum" role="button"><i class="fa fa-2x fa-stack-overflow" aria-hidden="true"></i></a>
+            <a class="web-icon btn btn-block btn-default" href="http://stackoverflow.com/users/6111648/ray-meibaum" role="button"><i class="fa fa-2x fa-stack-overflow" aria-hidden="true"></i></a>
           </div>
           <div class="col-sm-2 col-xs-6">
-            <a class="btn btn-block btn-success" href="https://www.freecodecamp.com/raymeibaum" role="button"><i class="fa fa-2x fa-free-code-camp" aria-hidden="true"></i></a>
+            <a class="web-icon btn btn-block btn-default" href="https://www.freecodecamp.com/raymeibaum" role="button"><i class="fa fa-2x fa-free-code-camp" aria-hidden="true"></i></a>
           </div>
           <div class="col-sm-2 col-xs-6">
-            <a class="btn btn-block btn-default" href="https://www.medium.com/@raymeibaum" role="button"><i class="fa fa-2x fa-medium" aria-hidden="true"></i></a>
+            <a class="web-icon btn btn-block btn-default" href="https://www.medium.com/@raymeibaum" role="button"><i class="fa fa-2x fa-medium" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -75,6 +75,14 @@
         </div>
       </div>
     </section>
+
+		<section id="skills">
+			<div class="page-header">
+				<h2>Skills</h2>
+			</div>
+			<p class="lead" id="skills-content"></p>
+		</section>
+
     <section id="portfolio">
       <div class="page-header">
         <h2>Portfolio</h2>
@@ -85,21 +93,9 @@
     <!-- portfolio modal -->
     <div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-body"></div>
-          <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-        </div>
+        <div class="modal-content"></div>
       </div>
     </div>
-
-    <section id="skills">
-      <div class="page-header">
-        <h2>Skills</h2>
-      </div>
-      <div class="row" id="skills-content"></div>
-    </section>
 
     <section id="education">
       <div class="page-header">

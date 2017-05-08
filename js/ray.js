@@ -2,14 +2,38 @@
 const Ray = {
   about: {
     lead: `Hello! My name is Ray Meibaum, and I am a full-stack JavaScript developer. `,
-    main: `I have a passion for creating wonderful user experiences through sleek front end UIs as well as fully featured back end servers. Currently, I am a web development student at General Assembly, Atlanta, but soon I will be bringing my web development excitement and skillset into the workforce. 
-           
-           My skillset is mainly the MEAN stack (MongoDB, Express, AngularJS, and Node.JS), but I also have ample experience with Git and GitHub, as well as relational databases such as MySQL. 
-           
+    main: `I have a passion for creating wonderful user experiences through sleek front end UIs as well as fully featured back end servers. Currently, I am a web development student at General Assembly, Atlanta, but soon I will be bringing my web development excitement and skillset into the workforce.
+
+           My skillset is mainly the MEAN stack (MongoDB, Express, AngularJS, and Node.JS), but I also have ample experience with Git and GitHub, as well as relational databases such as MySQL.
+
            My hobbies include exploring the earth with my future wife, Melanie and my dog, Charlie. I love cycling and playing the violin.`
   },
   portrait: "img/rem-portrait.jpg",
   portfolio: [{
+    title: "Cornholer",
+    description: "A MEAN stack application for keeping cornhole statistics.",
+    features: [
+      "Fully featured backend using Node/ExpressJS",
+      "MongoDB document database featuring CRUD operations on three models",
+			"AngularJS single page application architecture",
+      "User registration and login system using Passport.js",
+      "Mobile-first responsive design using Bootstrap"
+    ],
+    image: "img/cornholer.png",
+    deployment: "https://cornholer.herokuapp.com/",
+    repository: "https://github.com/raymeibaum/cornholer"
+  },{
+    title: "City Tips",
+    description: "A Ruby on Rails application for viewing and posting city tips.",
+    features: [
+      "Server-side rending using Ruby on Rails",
+      "User authentication using Devise",
+      "Mobile-first responsive design using Bootstrap"
+    ],
+    image: "img/city-tips.png",
+    deployment: "https://city-tips.herokuapp.com/",
+    repository: "https://github.com/raymeibaum/city-tips"
+  },{
     title: "Pubcrawlr",
     description: "A MEN stack application that allows users to plan pubcrawls based on their favorite bars.",
     features: [
@@ -91,33 +115,19 @@ const Ray = {
     deployment: "https://raymeibaum.github.io/FCC-WikipediaViewer/",
     repository: "https://github.com/raymeibaum/FCC-WikipediaViewer"
   }],
-  skills: [{
-    category: "Strong",
-    items: [
-      "HTML",
-      "Bootstrap",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "Git/GitHub"
-    ]
-  }, {
-    category: "Experienced",
-    items: [
-      "Python",
-      "AngularJS",
-      "MySQL",
-      "Node.js",
-      "Express"
-    ]
-  }, {
-    category: "Horizon",
-    items: [
-      "ReactJS",
-      "Angular2",
-      "Ruby"
-    ]
-  }],
+  skills: [
+		"JavaScript",
+		"HTML",
+		"CSS",
+		"AngularJS",
+		"Node.js",
+		"Express",
+		"MongoDB",
+		"Git/GitHub",
+		"SQL",
+		"Ruby",
+		"Rails",
+	],
   education: [{
     name: "General Assembly",
     description: "Web Development Immersive, Computer Software Engineering",
