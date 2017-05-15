@@ -1,7 +1,7 @@
 'use-strict';
 const Ray = {
   about: {
-    lead: `Hello! My name is Ray Meibaum, and I am a full-stack JavaScript developer. `,
+    lead: `My name is Ray Meibaum, and I am a full stack web developer. `,
     main: `I have a passion for creating wonderful user experiences through sleek front end UIs as well as fully featured back end servers. Currently, I am a web development student at General Assembly, Atlanta, but soon I will be bringing my web development excitement and skillset into the workforce.
 
            My skillset is mainly the MEAN stack (MongoDB, Express, AngularJS, and Node.JS), but I also have ample experience with Git and GitHub, as well as relational databases such as MySQL.
@@ -10,6 +10,19 @@ const Ray = {
   },
   portrait: "img/rem-portrait.jpg",
   portfolio: [{
+    title: "Eventr",
+    description: "A Ruby on Rails/AngularJS application for finding local events.",
+    features: [
+      "Ruby on Rails backend",
+      "User authentication using Devise",
+			"AngularJS single page application architecture",
+      "Three Google Maps APIs (maps, geocoding, static maps)",
+      "Mobile-first responsive design using Bootstrap"
+    ],
+    image: "img/eventr.png",
+    deployment: "https://eventr-application.herokuapp.com/",
+    repository: "https://github.com/raymeibaum/eventr"
+  },{
     title: "Cornholer",
     description: "A MEAN stack application for keeping cornhole statistics.",
     features: [

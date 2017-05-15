@@ -34,7 +34,7 @@ const Presenter = {
 			<div class="modal-body">
 				<div class="row">
 					<div class="col-sm-6">
-						<a href="${project.deployment}">
+						<a href="${project.deployment}" target="_blank">
 							<img class="img-responsive modal-photo" src="${project.image}" alt="Sample image from project">
 		        </a>
 					</div>
@@ -68,8 +68,11 @@ const Presenter = {
   },
   renderEducation(education) {
     education.forEach((school) => {
-      let content = `<strong>${school.name}</strong>
-                     <p>${school.description}<br>${school.year}</p>`;
+      let content = `<address>
+											<strong>${school.name}</strong>
+                     	<p>${school.description}<br>
+											${school.year}</p>
+										</address>`;
       Presenter.$education.append(content);
     });
   }
