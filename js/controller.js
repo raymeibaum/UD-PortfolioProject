@@ -4,6 +4,7 @@ const Controller = {
     Presenter.renderAbout(Ray.about, Ray.portrait);
     Presenter.renderPortfolio(Ray.portfolio);
     Presenter.renderSkills(Ray.skills);
+		Presenter.renderAwards(Ray.awards);
     Presenter.renderEducation(Ray.education);
   },
   onClickProject() {

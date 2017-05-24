@@ -7,6 +7,7 @@ const Presenter = {
   $portfolioModal: $('div.modal-content'),
   $skills: $('p#skills-content'),
   $education: $('div#education-content'),
+	$awards: $('div#awards-content'),
   renderAbout(about, portraitSrc) {
     this.$aboutLead.text(about.lead);
     this.$aboutText.text(about.main);
@@ -74,6 +75,16 @@ const Presenter = {
 											${school.year}</p>
 										</address>`;
       Presenter.$education.append(content);
+    });
+  },
+	renderAwards(awards) {
+    awards.forEach((award) => {
+      let content = `<address>
+											<strong>${award.name}</strong>
+                     	<p>${award.description}<br>
+											${award.date}</p>
+										</address>`;
+      Presenter.$awards.append(content);
     });
   }
 }

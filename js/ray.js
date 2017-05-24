@@ -16,6 +16,8 @@ const Ray = {
       "Ruby on Rails backend",
       "User authentication using Devise",
 			"AngularJS single page application architecture",
+			"PosgreSQL relational database featuring polymorphic associations",
+			"Event infomation via Eventful API",
       "Three Google Maps APIs (maps, geocoding, static maps)",
       "Mobile-first responsive design using Bootstrap"
     ],
@@ -81,53 +83,55 @@ const Ray = {
     image: "img/animal-match.png",
     deployment: "https://raymeibaum.github.io/wdi-fundamentals-memorygame/",
     repository: "https://github.com/raymeibaum/wdi-fundamentals-memorygame"
-  },{
-    title: "Local Weather",
-    description: `Allows the user to see pertinent weather information based
-    on their location.`,
-    features: [
-      "Use of current location",
-      "Google Reverse Geolocation API",
-      "Forecast.io Weather API",
-      "Skycons animated weather icons API"
-    ],
-    image: "img/local-weather.png",
-    deployment: "https://raymeibaum.github.io/FCC-LocalWeather/",
-    repository: "https://github.com/raymeibaum/FCC-LocalWeather"
-  }, {
-    title: "Random Quote Generator",
-    description: "Displays random programming related quotes to the user.",
-    features: [
-      "Random programming quotes API by Adam Pope of Storm Consultancy",
-      "Twitter Tweet Button API",
-      "Bootstrap styling"
-    ],
-    image: "img/random-quote-generator.png",
-    deployment: "http://raymeibaum.github.io/FCC-RandomQuoteGenerator/",
-    repository: "https://github.com/raymeibaum/FCC-RandomQuoteGenerator"
-  }, {
-    title: "Twitch API",
-    description: "Uses the Twitch API to display an array of user statuses.",
-    features: [
-      "Twitch API",
-      "Icons by Font Awesome",
-      "Bootstrap styling"
-    ],
-    image: "img/twitch.png",
-    deployment: "https://raymeibaum.github.io/FCC-TwitchAPI",
-    repository: "https://github.com/raymeibaum/FCC-TwitchAPI"
-  }, {
-    title: "Wikipedia Viewer",
-    description: "Allows the user to search for Wikipedia articles.",
-    features: [
-      "Wikipedia Search API",
-      "Random article button",
-      "Bootstrap styling"
-    ],
-    image: "img/wikipedia.png",
-    deployment: "https://raymeibaum.github.io/FCC-WikipediaViewer/",
-    repository: "https://github.com/raymeibaum/FCC-WikipediaViewer"
-  }],
+  }
+	// ,{
+  //   title: "Local Weather",
+  //   description: `Allows the user to see pertinent weather information based
+  //   on their location.`,
+  //   features: [
+  //     "Use of current location",
+  //     "Google Reverse Geolocation API",
+  //     "Forecast.io Weather API",
+  //     "Skycons animated weather icons API"
+  //   ],
+  //   image: "img/local-weather.png",
+  //   deployment: "https://raymeibaum.github.io/FCC-LocalWeather/",
+  //   repository: "https://github.com/raymeibaum/FCC-LocalWeather"
+  // }, {
+  //   title: "Random Quote Generator",
+  //   description: "Displays random programming related quotes to the user.",
+  //   features: [
+  //     "Random programming quotes API by Adam Pope of Storm Consultancy",
+  //     "Twitter Tweet Button API",
+  //     "Bootstrap styling"
+  //   ],
+  //   image: "img/random-quote-generator.png",
+  //   deployment: "http://raymeibaum.github.io/FCC-RandomQuoteGenerator/",
+  //   repository: "https://github.com/raymeibaum/FCC-RandomQuoteGenerator"
+  // }, {
+  //   title: "Twitch API",
+  //   description: "Uses the Twitch API to display an array of user statuses.",
+  //   features: [
+  //     "Twitch API",
+  //     "Icons by Font Awesome",
+  //     "Bootstrap styling"
+  //   ],
+  //   image: "img/twitch.png",
+  //   deployment: "https://raymeibaum.github.io/FCC-TwitchAPI",
+  //   repository: "https://github.com/raymeibaum/FCC-TwitchAPI"
+  // }, {
+  //   title: "Wikipedia Viewer",
+  //   description: "Allows the user to search for Wikipedia articles.",
+  //   features: [
+  //     "Wikipedia Search API",
+  //     "Random article button",
+  //     "Bootstrap styling"
+  //   ],
+  //   image: "img/wikipedia.png",
+  //   deployment: "https://raymeibaum.github.io/FCC-WikipediaViewer/",
+  //   repository: "https://github.com/raymeibaum/FCC-WikipediaViewer"
+  // }
+],
   skills: [
 		"JavaScript",
 		"HTML",
@@ -141,6 +145,11 @@ const Ray = {
 		"Ruby",
 		"Rails",
 	],
+	awards: [{
+		name: "GovTech Challenge Winner",
+		description: "AngelHack Global Hackathon Series: Atlanta",
+		date: "May 2017"
+	}],
   education: [{
     name: "General Assembly",
     description: "Web Development Immersive, Computer Software Engineering",
