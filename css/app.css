@@ -29,8 +29,12 @@ h6 {
     color: var(--heading-white);
 }
 
-a {
+.text-link {
     font: var(--link-font);
+    color: var(--link-color);
+}
+
+.icon-link {
     color: var(--link-color);
 }
 
