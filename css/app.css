@@ -7,7 +7,13 @@ body {
     background: linear-gradient(to right, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
     font: var(--master-font);
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--master-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 h1,
@@ -37,4 +43,9 @@ ul {
 li {
     display: inline;
     margin-right: 1em;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
 }
