@@ -1,0 +1,11 @@
+:root {
+    /* Fonts */
+    --master-font: 400 1em 'Roboto', sans-serif;
+    --heading-font: 'Bitter', serif;
+    --link-font: 700 1em 'Roboto', sans-serif;
+
+    /* Colors */
+    --translucent-white: rgba(255, 255, 255, .6);
+    --link-color: rgba(255, 255, 255, .8);
+    --link-hover-color: rgba(255, 255, 255, 1);
+}
