@@ -2,10 +2,13 @@
 @import 'variables.css';
 
 body {
-    background: #16BFFD;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #CB3066, #16BFFD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     height: 100vh;
+
     font: var(--master-font);
     color: var(--master-white);
 
@@ -23,6 +26,7 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
+    color: var(--heading-white);
 }
 
 a {

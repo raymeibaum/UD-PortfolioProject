@@ -6,6 +6,7 @@
 
     /* Colors */
     --master-white: rgba(255, 255, 255, .7);
+    --heading-white: rgba(255, 255, 255, .9);
     --link-color: rgba(255, 255, 255, .8);
     --link-hover-color: rgba(255, 255, 255, 1);
 }
