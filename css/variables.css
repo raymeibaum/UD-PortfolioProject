@@ -5,7 +5,7 @@
     --link-font: 700 1em 'Roboto', sans-serif;
 
     /* Colors */
-    --master-white: rgba(255, 255, 255, .6);
+    --master-white: rgba(255, 255, 255, .66);
     --heading-white: rgba(255, 255, 255, .9);
     --link-color: rgba(255, 255, 255, .8);
     --link-hover-color: rgba(255, 255, 255, 1);

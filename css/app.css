@@ -33,15 +33,6 @@ h6 {
     color: var(--heading-white);
 }
 
-.text-link {
-    font: var(--link-font);
-    color: var(--link-color);
-}
-
-.icon-link {
-    color: var(--link-color);
-}
-
 a:hover {
     color: var(--link-hover-color);
     text-decoration: none;
@@ -58,12 +49,22 @@ li {
     margin-right: 1em;
 }
 
+.text-link {
+    font: var(--link-font);
+    color: var(--link-color);
+}
+
+.icon-link {
+    color: var(--link-color);
+}
+
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.image-rounded {
+.portrait {
+    opacity: 0.9;
     border-radius: 50%;
 }
