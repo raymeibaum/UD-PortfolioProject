@@ -1,26 +1,18 @@
 @import 'fonts.css';
 @import 'variables.css';
 
-html {
-    height: 100vh;
-}
-
 body {
     background: #5f2c82;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
-    height: 100%;
-
     font: var(--master-font);
     color: var(--master-white);
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+main {
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    height: 100vh;
 }
 
 h1,
@@ -58,13 +50,12 @@ li {
     color: var(--link-color);
 }
 
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .portrait {
     opacity: 0.9;
-    border-radius: 50%;
+}
+
+.vertically-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
