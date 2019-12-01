@@ -1,40 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Full-Stack Web Developer">
-    <meta name="author" content="Ray Meibaum">
-    <meta name="keywords" content="Ray Meibaum, Ray Meibaum developer, Ray Meibaum jr">
 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="I do code things for Points of Light. When I'm not adventuring in codeland, you'll likely find me on the beach with my family.">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/app.css">
-    <title>raymeibaum.com</title>
-  </head>
-  <body>
-    <main class="vertically-centered">
-      <div class="container mx-auto">
-        <div class="row p-3">
-          <div class="col-sm-5 mb-3 mb-sm-0">
-            <img class="img-fluid portrait rounded-circle" src="https://www.gravatar.com/avatar/a85ec5840604f99fa9cd23e431afab24?s=2048" alt="Ray Meibaum's Gravatar">
-          </div>
-          <div class="col-sm vertically-centered">
-            <h1>Hello!</h1>
-            <h4>My name is Ray Meibaum.</h4>
-            <p>
-                I do code things for <a class="text-link" href="http://www.pointsoflight.org" target="_blank">Points&nbsp;of&nbsp;Light</a>. When I'm not adventuring in codeland, you'll likely find me on the beach with my family.
-            </p>
-            <ul>
-              <li><a class="icon-link" href="https://github.com/raymeibaum" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-              <li><a class="icon-link" href="https://www.linkedin.com/in/raymeibaum/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-              <li><a class="icon-link" href="https://twitter.com/raymeibaum" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-              <li><a class="icon-link" href="https://www.instagram.com/raymeibaum/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
+  <meta property="og:title" content="Ray Meibaum - Web Developer">
+  <meta property="og:url" content="https://www.raymeibaum.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="I do code things for Points of Light. When I'm not adventuring in codeland, you'll likely find me on the beach with my family.">
+  <meta property="og:image" content="https://www.gravatar.com/avatar/a85ec5840604f99fa9cd23e431afab24?s=2048">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@raymeibaum">
+  <meta name="twitter:creator" content="@raymeibaum">
+  <meta name="twitter:title" content="Ray Meibaum - Web Developer">
+  <meta name="twitter:description" content="I do code things for Points of Light. When I'm not adventuring in codeland, you'll likely find me on the beach with my family.">
+  <meta name="twitter:url" content="https://www.raymeibaum.com/">
+  <meta name="twitter:image" content="https://www.gravatar.com/avatar/a85ec5840604f99fa9cd23e431afab24?s=2048">
+
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/app.css">
+
+  <title>Ray Meibaum - Web Developer</title>
+</head>
+
+<body>
+  <main itemscope itemtype="http://schema.org/Person" class="mx-auto h-screen flex flex-col justify-center items-center sm:flex-row max-w-4xl p-4 text-white opacity-75">
+    <img itemprop="image" class="w-full sm:w-2/5 rounded-full flex-none mr-0 sm:mr-4" src="https://www.gravatar.com/avatar/a85ec5840604f99fa9cd23e431afab24?s=2048" alt="Portrait of Ray Meibaum">
+    <div class="w-full sm:w-3/5">
+      <h1 class="font-heading text-4xl">Hello!</h1>
+      <h3 class="font-heading text-2xl">My name is <span itemprop="name" class="font-heading">Ray Meibaum</span>.</h3>
+      <p itemprop="description">
+        I do code things for <a class="font-bold opacity-100" href="http://www.pointsoflight.org" target="_blank" rel="noopener noreferrer">Points&nbsp;of&nbsp;Light</a>. When
+        I'm not adventuring in codeland, you'll likely find me on the beach with my family.
+      </p>
+      <ul class="mt-4">
+        <li class="inline mr-2"><a href="https://github.com/raymeibaum" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a></li>
+        <li class="inline mr-2"><a href="https://www.linkedin.com/in/raymeibaum/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a></li>
+        <li class="inline mr-2"><a href="https://twitter.com/raymeibaum" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x"></i></a></li>
+        <li class="inline mr-2"><a href="https://www.instagram.com/raymeibaum/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </main>
+</body>
+
 </html>
