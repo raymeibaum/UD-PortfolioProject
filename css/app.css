@@ -1,29 +1,13 @@
-@import 'fonts.css';
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-* {
-    font-family: 'Open Sans', sans-serif;
-}
-
-body,
 html {
-    background: #5f2c82;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Roboto', sans-serif;
 }
 
-.font-heading {
-    font-family: 'Bitter', serif;
-}
-
-.p-6-safe {
-    padding: 1.5rem;
-}
-
-@supports(padding: max(0px)) {
-    .p-6-safe {
-        padding-top: max(1.5rem, env(safe-area-inset-top));
-        padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
-        padding-left: max(1.5rem, env(safe-area-inset-left));
-        padding-right: max(1.5rem, env(safe-area-inset-right));
-    }
+.font-display {
+    font-family: 'Big Shoulders Display', cursive;
 }
